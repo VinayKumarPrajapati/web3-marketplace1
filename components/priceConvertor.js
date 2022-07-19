@@ -13,13 +13,12 @@ import avalanche from "../assets/avalanche.png";
 import bnb from "../assets/bnb.png";
 import { useContext } from "react";
 import { Web3Context } from "../context/context";
-
 const styles = {
 	converter: `flex items-center justify-between bg-[#171924] border border-gray-500/10 px-5 py-5 rounded-xl`,
 	convertButton: `bg-[#1d4ed8] p-2 px-5 w-min rounded-xl mt-5 cursor-pointer hover:opacity-60`,
 };
 
-const PriceConverter = ({
+const CMCpriceConverter = ({
 	from,
 	to,
 	fromSymbol,
@@ -28,8 +27,8 @@ const PriceConverter = ({
 	toLogo,
 	price,
 }) => {
-	// const { convertCrypto } = useContext(Web3Context);
-	// console.log(convertCrypto);
+	const { convertCrypto } = useContext(Web3Context);
+	console.log(convertCrypto);
 
 	const coinIcon = () => {
 		switch (from) {
@@ -196,11 +195,11 @@ const PriceConverter = ({
 				<p className="text-3xl">${price}</p>
 			</div>
 
-			{/* <div className={styles.convertButton} onClick={convertCrypto}>
+			<div className={styles.convertButton} onClick={convertCrypto}>
 				Convert
-			</div> */}
+			</div>
 		</div>
 	);
 };
 
-export default PriceConverter;
+export default CMCpriceConverter;

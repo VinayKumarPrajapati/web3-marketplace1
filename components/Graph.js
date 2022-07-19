@@ -12,19 +12,19 @@ const randomPoints = [
 ];
 
 const getRandomPoints = () => {
-	const randomInt = Math.floor(Math.random() * 4) + 1;
-	return randomPoints[randomInt];
+	const rndInt = Math.floor(Math.random() * 4) + 1;
+	return randomPoints[rndInt];
 };
 
 const data = {
-	Labels: [
-		"9:15 PM",
-		"11:15 PM",
-		"1:15 PM",
-		"3:15 PM",
-		"5:15 AM",
-		"7:15 PM",
-		"9:15 PM",
+	labels: [
+		"6:04 PM",
+		"9:04 PM",
+		"3:04 PM",
+		"6:04 PM",
+		"9:04 AM",
+		"12:04 PM",
+		"3: 04 PM",
 	],
 	datasets: [
 		{
@@ -49,6 +49,7 @@ const data = {
 		},
 	],
 };
+
 const options = {
 	plugins: {
 		legend: {

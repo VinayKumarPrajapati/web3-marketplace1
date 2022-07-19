@@ -1,7 +1,6 @@
 import MoreButton from "./moreButton";
 import TrendingCardRow from "./trendingCardRow";
 import Image from "next/image";
-
 const styles = {
 	trendingCard: `w-full p-5 py-3 pb-0 bg-[#323546] rounded-xl text-white mr-3`,
 	trendingCardWrapper: `flex items-center justify-between`,

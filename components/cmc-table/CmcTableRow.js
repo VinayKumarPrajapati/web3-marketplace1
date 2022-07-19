@@ -1,9 +1,7 @@
-import React from "react";
-
 import Image from "next/image";
 import More from "../../assets/svg/more";
 import Star from "../../assets/svg/star";
-import CoinNameRow from "../components/cmc-table/CoinNameRow";
+import CoinNameRow from "../../components/cmc-table/CoinNameRow";
 import Rate from "./rate";
 import { useRouter } from "next/router";
 
@@ -11,7 +9,7 @@ const styles = {
 	tableRow: `text-white border-b border-gray-800 text-[0.93rem]`,
 };
 
-const CmctableRow = ({
+const CmcTableRow = ({
 	starNum,
 	coinName,
 	coinIcon,
@@ -127,4 +125,4 @@ const CmctableRow = ({
 	);
 };
 
-export default CmctableRow;
+export default CmcTableRow;
