@@ -10,7 +10,7 @@ import Rate from "./cmc-table/rate";
 import usdt from "../assets/usdt.png";
 import gainers from "../assets/gainers.png";
 import recent from "../assets/recent.png";
-// import TrendingCard from "./trendingCard";
+import TrendingCard from "./trendingCard";
 import ReactSwitch from "react-switch";
 
 const styles = {
