@@ -1,5 +1,5 @@
 import Image from "next/image";
-import DropdownBtn from "./buttons/dropDownBtn";
+import DropdownBtn from "./buttons/dropdownBtn";
 import Rate from "./cmc-table/rate";
 import RateFilled from "./buttons/rateFilled";
 import btc from "../assets/btc.png";
